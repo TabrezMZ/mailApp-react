@@ -7,6 +7,7 @@ import { Spam } from './pages/Spam'
 import { Starred } from './pages/Starred'
 import { Trash } from './pages/Trash'
 import { AboutMail } from './pages/AboutMail'
+import { NotFound } from './pages/NotFound';
 
 function App() {
   return (
@@ -16,11 +17,12 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path='/inbox' element={<Inbox />} />
+        <Route path='/' element={<Inbox />} />
         <Route path='/spam' element={<Spam />} />
         <Route path='/starred' element={<Starred />} />
         <Route path='/trash' element={<Trash />} />
         <Route path='/mails/:mailId' element={<AboutMail />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </div>
   );

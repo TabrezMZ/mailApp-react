@@ -13,7 +13,7 @@ const getNavStyle = ({ isActive }) => ({
 export const Navbar = () => {
     return (
         <>
-            <NavLink style={getNavStyle} to='/inbox'>Inbox</NavLink>
+            <NavLink style={getNavStyle} to='/'>Inbox</NavLink>
             <NavLink style={getNavStyle} to='/starred'>Starred</NavLink>
             <NavLink style={getNavStyle} to='/trash'>Trash</NavLink>
             <NavLink style={getNavStyle} to='/spam'>Spam </NavLink>
